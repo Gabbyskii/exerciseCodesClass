@@ -1,10 +1,10 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-class DrinksMenu implements escape{
+class DrinksMenu {
     public static void main(String[] Args ){
-        try (// Opretter Scanner til at læse bruger input
-        Scanner scan = new Scanner(System.in)) {
+        // Opretter Scanner til at læse bruger input
+        Scanner scan = new Scanner(System.in); 
             // Spørger brugeren om deres alder
             System.out.println("Hvor gammel er du? ");
             String age = scan.nextLine();
@@ -51,9 +51,5 @@ class DrinksMenu implements escape{
             
             // Viser brugerens valgte drinks
             System.out.println("- " + choices);
-        } catch (NumberFormatException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        } 
     }
-}
